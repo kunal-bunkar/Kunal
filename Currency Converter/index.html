@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <!-- <img src="Backgroung.jpg" alt=""> -->
+        <div class="main">
+            <h1>Currency Converter</h1>
+            <form>
+                <input type="number" inputmode="tel" placeholder="Enter Amount"
+                    oninput="this.value =this.value.replace(/[^0-9]/g), '' ">
+                <div class="slecet">
+                    <div class="from">
+                        <h4>From</h4>
+                        <div class="container">
+                            <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                            <select name="from">
+                            </select>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-right-left"></i>
+                    <div class="to">
+                        <h4>To</h4>
+                        <div class="container">
+                            <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                            <select name="to">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+                <div class="msg">
+                    <div class="in"></div>
+                    <div class="out"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="currency.js"></script>
+    <script src="code.js"></script>
+</body>
+</html>
